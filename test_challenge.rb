@@ -17,4 +17,8 @@ class Test_challenge < Test::Unit::TestCase
         assert_equal(exact_match(1234, "1234"), false)
         assert_equal(exact_match("123123", "123123123123123123123123123"), false)
     end
+
+    def test_number_of_matches
+        assert_equal(get_number_matches("1234", "1234"), 4)
+    end
 end
