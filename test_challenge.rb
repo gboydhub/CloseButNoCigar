@@ -8,5 +8,6 @@ class Test_challenge < Test::Unit::TestCase
 
     def test_element_string
         assert_equal(validate_input_class("1234"), true)
+        assert_equal(validate_input_class(1234), false)
     end
 end
