@@ -10,4 +10,9 @@ class Test_challenge < Test::Unit::TestCase
         assert_equal(validate_input_class("1234"), true)
         assert_equal(validate_input_class(1234), false)
     end
+
+    def test_exact_match_returns_4
+        assert_equal(exact_match("1234", "1234"), true)
+        assert_equal(exact_match("1234", "1111"), false)
+    end
 end
