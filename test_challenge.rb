@@ -22,6 +22,6 @@ class Test_challenge < Test::Unit::TestCase
         assert_equal(get_number_matches("1234", "1234"), 4)
         assert_equal(get_number_matches("1234", "1233"), 3)
         assert_equal(get_number_matches("1234", "1"), 1)
-        assert_equal(get_number_matches("1234", 12), 2)
+        assert_equal(get_number_matches("1234", 12), false)
     end
 end

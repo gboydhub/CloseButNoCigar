@@ -11,6 +11,10 @@ def exact_match(str1, str2)
 end
 
 def get_number_matches(str1, str2)
+    if !validate_input_class(str1) || !validate_input_class(str2) then
+        return false
+    end
+
     counter = 0
     match_count = 0
     while counter < str1.length
