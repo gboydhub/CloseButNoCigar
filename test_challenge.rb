@@ -20,5 +20,6 @@ class Test_challenge < Test::Unit::TestCase
 
     def test_number_of_matches
         assert_equal(get_number_matches("1234", "1234"), 4)
+        assert_equal(get_number_matches("1234", "1233"), 3)
     end
 end
