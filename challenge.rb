@@ -7,5 +7,5 @@ def validate_input_class(input)
 end
 
 def exact_match(str1, str2)
-    true
+    (str1 == str2)
 end
