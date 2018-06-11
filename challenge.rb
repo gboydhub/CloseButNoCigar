@@ -5,3 +5,7 @@ def validate_input_class(input)
     end
     return false
 end
+
+def exact_match(str1, str2)
+    true
+end
